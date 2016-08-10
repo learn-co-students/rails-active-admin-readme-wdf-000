@@ -46,3 +46,5 @@ post = Post.create(title: "Links! Click Links!", description: post3, author: aut
 
 #set one to yesterday
 post.update_attribute(:created_at, Time.zone.today.advance(days: -1))
+
+user1 = AdminUser.create(email: "email@gmail.com", password: "123123")
